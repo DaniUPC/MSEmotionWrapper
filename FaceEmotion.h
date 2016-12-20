@@ -65,38 +65,38 @@ inline Expression from_string(const string& s)
 class FaceEmotion
 {
 
-		private:
+	private:
+	
+		Expression dominant;
+		double confidence;
+
+		int height;
+		int width;
+		int left;
+		int top;
+
+	public:
+	
+		/*
+		 * 	Returns the (y,x) coordinates of the center of the face
+		 */
+		int *get_center();
+
+		/*
+		 * 	Parses the object from a JSON input
+		 */ 
+		void parseObject(Value::Object obj);
 		
-			Expression dominant;
-			double confidence;
-
-			int height;
-			int width;
-			int left;
-			int top;
-
-		public:
 		
-			/*
-			 * 	Returns the (y,x) coordinates of the center of the face
-			 */
-			int *get_center();
-
-			/*
-			 * 	Parses the object from a JSON input
-			 */ 
-			void parseObject(Value::Object obj);
-			
-			
-			/*
-			 * 	List of getters
-			 */ 
-			int get_height();
-			int get_width();
-			int get_left();	// Left coordinates in image of face start
-			int get_top();	// Top coordinate in image of face start	
-			double get_score();
-			Expression get_expression();
+		/*
+		 * 	List of getters
+		 */ 
+		int get_height();
+		int get_width();
+		int get_left();	// Left coordinates in image of face start
+		int get_top();	// Top coordinate in image of face start	
+		double get_score();
+		Expression get_expression();
 			
 };
  
