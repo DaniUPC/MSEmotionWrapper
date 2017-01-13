@@ -17,7 +17,7 @@ We have provided a [Creative Commons test image](https://www.flickr.com/photos/m
  Modify the following line in [main.cpp](https://github.com/DaniUPC/MSEmotionWrapper/blob/master/main.cpp) so it uses your personal API key from Microsoft Cognitive Services:
  
  ```python
-const char* key = "ocp-apim-subscription-key: INSERT KEY HERE";
+const char* key = "Ocp-Apim-Subscription-Key: INSERT KEY HERE";
 ```
 
 If you do not have a key, you can get one [here](https://www.microsoft.com/cognitive-services/en-us/apis).

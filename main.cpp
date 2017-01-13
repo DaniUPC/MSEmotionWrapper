@@ -19,7 +19,7 @@ static void print_face(FaceEmotion& f)
 int main(int argc, char *argv[])
 {
 
-	const char* key = "ocp-apim-subscription-key: INSERT KEY HERE";
+	const char* key = "Ocp-Apim-Subscription-Key: INSERT KEY HERE";
  	const char* url = "https://api.projectoxford.ai/emotion/v1.0/recognize";
 	const char* file_name = "image.jpg";
  
